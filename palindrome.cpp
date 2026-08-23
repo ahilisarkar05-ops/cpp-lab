@@ -1,16 +1,14 @@
 #include <iostream>
 #include <string>
-#include <algorithm> // Required for std::reverse
+#include <algorithm>
 
 using namespace std;
 
-// Function to check if an integer is a palindrome
 bool isNumberPalindrome(int num) {
-    // Negative numbers are not palindromes (e.g., -121 reversed is 121-)
     if (num < 0) return false;
 
     int originalNum = num;
-    long long reversedNum = 0; // Use long long to prevent integer overflow during reversal
+    long long reversedNum = 0; 
 
     while (num > 0) {
         int lastDigit = num % 10;
@@ -21,20 +19,18 @@ bool isNumberPalindrome(int num) {
     return originalNum == reversedNum;
 }
 
-// Function to check if a string is a palindrome
 bool isStringPalindrome(const string& str) {
     int left = 0;
     int right = str.length() - 1;
 
-    // Two-pointer approach: compare characters from both ends moving inward
     while (left < right) {
         if (str[left] != str[right]) {
-            return false; // Mismatch found
+            return false; 
         }
         left++;
         right--;
     }
-    return true; // All characters matched
+    return true; 
 }
 
 int main() {
