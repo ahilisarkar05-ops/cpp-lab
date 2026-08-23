@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// User-defined function using call by value
 void callByValue(int x)
 {
     x = x + 5;
     cout << "Value inside call by value function: " << x << endl;
 }
 
-// User-defined function using call by reference
 void callByReference(int &x)
 {
     x = x + 5;
