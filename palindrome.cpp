@@ -1,20 +1,10 @@
 #include <iostream>
 #include <string>
-<<<<<<< HEAD
 #include <algorithm>
 
 using namespace std;
 
 bool isNumberPalindrome(int num) {
-=======
-#include <algorithm> 
-
-using namespace std;
-
-
-bool isNumberPalindrome(int num) {
-    
->>>>>>> 3eca145 (new commit)
     if (num < 0) return false;
 
     int originalNum = num;
